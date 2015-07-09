@@ -12,7 +12,27 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
 
     var window: UIWindow?
-
+    
+    var glossary : Glossary =
+    Glossary(categories: [
+        Category( name: "代数",
+                                    terms: [Term(name:"因数分解",path:"path_1.html"),
+                                            Term(name:"微分積分A",path:"path_1.html"),
+                                            Term(name:"微分積分B",path:"path_1.html"),
+                                            Term(name:"微分積分C",path:"path_1.html"),
+                                            Term(name:"微分積分D",path:"path_1.html")]),
+        
+        Category( name: "計算",
+            terms: [Term(name:"足し算",path:"path_1.html"),
+                Term(name:"引き算",path:"path_1.html"),
+                Term(name:"かけ残",path:"path_1.html"),
+                Term(name:"足し算",path:"path_1.html")]),
+        Category( name: "図形",
+            terms: [Term(name:"正弦定理",path:"path_1.html"),
+                Term(name:"余弦定理",path:"path_1.html"),
+                Term(name:"メネラウスの定理",path:"path_1.html")])
+                ])
+    
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
